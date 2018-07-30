@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.lang.management.ManagementFactory;
 
 /**
- * Created by diyai on 2018/6/30.
+ * 生成18位id串
  */
 public class CtuId implements Serializable {
 

@@ -5,9 +5,9 @@ import org.slf4j.LoggerFactory;
 
 import java.security.MessageDigest;
 
-public class Md5Util {
+public class MD5Util {
 
-    public static final Logger LOGGER = LoggerFactory.getLogger(Md5Util.class);
+    public static final Logger LOGGER = LoggerFactory.getLogger(MD5Util.class);
 
     public static byte[] md5(byte[] src){
         MessageDigest md = null;

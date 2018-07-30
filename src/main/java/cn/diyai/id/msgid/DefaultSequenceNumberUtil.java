@@ -12,10 +12,6 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.concurrent.atomic.AtomicLong;
 
-/**
- * @author huzorro(huzorro@gmail.com)
- *
- */
 public class DefaultSequenceNumberUtil {
 
 	public static byte[] sequenceN2Bytes(SequenceNumber sn) {

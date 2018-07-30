@@ -7,11 +7,6 @@ import cn.diyai.id.MsgId;
 
 import java.nio.ByteBuffer;
 
-/**
- * 
- * @author huzorro(huzorro@gmail.com)
- *
- */
 public final class DefaultMsgIdUtil {
 	
 	public static byte[] msgId2Bytes(MsgId msgId) {

@@ -10,10 +10,6 @@ import java.io.Serializable;
 import java.text.ParseException;
 import java.util.Date;
 
-/**
- * @author huzorro(huzorro@gmail.com)
- *
- */
 public class SequenceNumber implements Serializable {
 	private static final long serialVersionUID = 650229326111998772L;
 	private static final String[] datePattern = new String[]{"MMddHHmmss"};
