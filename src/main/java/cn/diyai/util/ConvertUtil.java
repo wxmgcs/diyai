@@ -358,4 +358,46 @@ public class ConvertUtil {
         }
         return str;
     }
+
+    /**
+     * 将字符串转移为ASCII码,16进制格式
+     *
+     * @param str 字符串
+     * @return 字符串ASCII码
+     */
+    public static String toASCII(String str) {
+        StringBuffer strBuf = new StringBuffer();
+        byte[] bGBK = str.getBytes();
+        for (int i = 0; i < bGBK.length; i++) {
+            strBuf.append(Integer.toHexString(bGBK[i] & 0xff));
+        }
+        return strBuf.toString();
+    }
+
+    /**
+     * 将字符串转移为Unicode码
+     * @param str 字符串
+     * @return
+     */
+    public static String toUnicode(String str) {
+        StringBuffer strBuf = new StringBuffer();
+        char[] chars = str.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            strBuf.append("\\u").append(Integer.toHexString(chars[i]));
+        }
+        return strBuf.toString();
+    }
+
+    /**
+     * 将字符串转移为Unicode码
+     * @param chars 字符数组
+     * @return
+     */
+    public static String toUnicodeString(char[] chars) {
+        StringBuffer strBuf = new StringBuffer();
+        for (int i = 0; i < chars.length; i++) {
+            strBuf.append("\\u").append(Integer.toHexString(chars[i]));
+        }
+        return strBuf.toString();
+    }
 }
