@@ -45,8 +45,7 @@ public class SSLUtil {
             TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
             trustManagerFactory.init(keyStore);
             sslContext.init(keyManagers, trustManagerFactory.getTrustManagers(), new SecureRandom());
-            SSLSocketFactory socketFactory = sslContext.getSocketFactory();
-            return socketFactory;
+            return sslContext.getSocketFactory();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -66,8 +65,7 @@ public class SSLUtil {
             clientKeyStore.load(bks, keystorePass.toCharArray());
             KeyManagerFactory keyManagerFactory = KeyManagerFactory.getInstance(KeyManagerFactory.getDefaultAlgorithm());
             keyManagerFactory.init(clientKeyStore, keystorePass.toCharArray());
-            KeyManager[] keyManagers = keyManagerFactory.getKeyManagers();
-            return keyManagers;
+            return keyManagerFactory.getKeyManagers();
         } catch (KeyStoreException e) {
             e.printStackTrace();
         } catch (UnrecoverableKeyException e) {

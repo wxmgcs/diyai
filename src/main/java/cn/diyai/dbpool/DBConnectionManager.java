@@ -142,10 +142,10 @@ public class DBConnectionManager {
         dscBean.setType( PropertiesUtils.getproperties("DB_TYPE","mysql"));
         dscBean.setName(PropertiesUtils.getproperties("DB_NAME","ctu800617"));
         dscBean.setDriver(PropertiesUtils.getproperties("DB_DRIVER","com.mysql.cj.jdbc.Driver"));
-        dscBean.setUrl(PropertiesUtils.getproperties("DB_URL","jdbc:mysql://192.168.3.109:3306/ctu_cmpp?useUnicode=true&characterEncoding=UTF8&autoReconnect=true"));
+        dscBean.setUrl(PropertiesUtils.getproperties("DB_URL","jdbc:mysql://127.0.0.1:3306/ctu_cmpp?useUnicode=true&characterEncoding=UTF8&autoReconnect=true"));
         dscBean.setUsername(PropertiesUtils.getproperties("DB_USERNAME","root"));
-        dscBean.setPassword(PropertiesUtils.getproperties("DB_PWD","ctu800617"));
-        dscBean.setMaxconn(Integer.parseInt(PropertiesUtils.getproperties("MAX_CONNECTION","200")));
+        dscBean.setPassword(PropertiesUtils.getproperties("DB_PWD","123456"));
+        dscBean.setMaxconn(Integer.parseInt(PropertiesUtils.getproperties("DB_MAX_CONNECTION","200")));
         dsConfig.add(dscBean);
         drivers=dsConfig;
         LOGGER.info("加载驱动程序。。。");
