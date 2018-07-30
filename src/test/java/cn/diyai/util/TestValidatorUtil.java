@@ -3,9 +3,6 @@ package cn.diyai.util;
 import junit.framework.Assert;
 import org.junit.Test;
 
-/**
- * Created by diyai on 2018/7/30.
- */
 public class TestValidatorUtil {
 
     @Test
