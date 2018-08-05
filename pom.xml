@@ -46,6 +46,27 @@
             <version>1.4.5</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- selenium-->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>2.39.0</version>
+        </dependency>
+        <!--webdriver phantomjs-->
+        <dependency>
+            <groupId>com.github.detro</groupId>
+            <artifactId>phantomjsdriver</artifactId>
+            <version>1.2.0</version>
+        </dependency>
+
+        <!-- xmlutil-->
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+
     </dependencies>
 
 
