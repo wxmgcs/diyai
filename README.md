@@ -33,3 +33,7 @@
 - zip解压缩  cn.diyai.util.ZipUtil
 - URL       cn.diyai.util.URLUtil
 - SSL    cn.diyai.util.SSLUtil
+
+
+#### 第三方服务
+- cn.diyai.ruokuai  图像验证码识别
