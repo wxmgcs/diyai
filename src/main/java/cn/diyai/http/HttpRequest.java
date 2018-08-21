@@ -226,29 +226,4 @@ public class HttpRequest {
 			ex.printStackTrace();
 		}
 	}
-
-	/*
-	 * 15801006614:7wangxiaomindeMac-mini:~ wxm$ curl
-	 * "http://127.0.0.1:7007/getMobile?id=1"
-	 * 15801006614:7wangxiaomindeMac-mini:~ wxm$ curl
-	 * "http://127.0.0.1:7007/getMobile?id=9"
-	 * 15801006616:9wangxiaomindeMac-mini:~ wxm$ curl
-	 * "http://127.0.0.1:7007/getMobile?id=9&is_valid=0" wangxiaomindeMac-mini:~
-	 * wxm$c-mini:~ wxm$ curl "http://127.0.0.1:7007/updateMobile?id=0&is_valid=
-	 * > "http://127.0.0.1:7007/updateMobile?id=0&is_valid=0" curl: (52) Empty
-	 * reply from server wangxiaomindeMac-mini:~ wxm$ curl
-	 * "http://127.0.0.1:7007/updateMobile?id=0&is_valid=0"
-	 * 0wangxiaomindeMac-mini:~ wxm$ curl
-	 * "http://127.0.0.1:7007/updateMobile?id=1&is_valid=0"
-	 * 0wangxiaomindeMac-mini:~ wxm$ curl
-	 * "http://127.0.0.1:7007/updateMobile?id=10&is_valid=0"
-	 */
-	/*
-	 * public static void main(String[] args){
-	 * System.out.println(sendGet("http://127.0.0.1:7007/getMobile","id=1"));
-	 * System.out.println(sendGet("http://127.0.0.1:7007/updateMobile",
-	 * "id=1&is_valid=0"));
-	 * 
-	 * }
-	 */
 }
